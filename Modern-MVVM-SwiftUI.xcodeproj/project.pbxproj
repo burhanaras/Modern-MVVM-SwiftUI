@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		94EDE84D26793E8700625325 /* Modern_MVVM_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE84C26793E8700625325 /* Modern_MVVM_SwiftUIApp.swift */; };
-		94EDE84F26793E8700625325 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE84E26793E8700625325 /* ContentView.swift */; };
+		94EDE84F26793E8700625325 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE84E26793E8700625325 /* HomeView.swift */; };
 		94EDE85126793E8A00625325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EDE85026793E8A00625325 /* Assets.xcassets */; };
 		94EDE85426793E8A00625325 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EDE85326793E8A00625325 /* Preview Assets.xcassets */; };
 		94EDE85F26793E8A00625325 /* Modern_MVVM_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE85E26793E8A00625325 /* Modern_MVVM_SwiftUITests.swift */; };
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		94EDE84926793E8700625325 /* Modern-MVVM-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modern-MVVM-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EDE84C26793E8700625325 /* Modern_MVVM_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modern_MVVM_SwiftUIApp.swift; sourceTree = "<group>"; };
-		94EDE84E26793E8700625325 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		94EDE84E26793E8700625325 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		94EDE85026793E8A00625325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94EDE85326793E8A00625325 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94EDE85526793E8A00625325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,7 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				94EDE84C26793E8700625325 /* Modern_MVVM_SwiftUIApp.swift */,
-				94EDE84E26793E8700625325 /* ContentView.swift */,
+				94EDE8772679459200625325 /* UI */,
+				94EDE879267945B400625325 /* Model */,
+				94EDE8782679459800625325 /* Network */,
+				94EDE87A267945CE00625325 /* Views */,
 				94EDE85026793E8A00625325 /* Assets.xcassets */,
 				94EDE85526793E8A00625325 /* Info.plist */,
 				94EDE85226793E8A00625325 /* Preview Content */,
@@ -128,6 +131,43 @@
 				94EDE86B26793E8A00625325 /* Info.plist */,
 			);
 			path = "Modern-MVVM-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		94EDE8772679459200625325 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				94EDE87B267945F700625325 /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		94EDE8782679459800625325 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		94EDE879267945B400625325 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94EDE87A267945CE00625325 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		94EDE87B267945F700625325 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				94EDE84E26793E8700625325 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94EDE84F26793E8700625325 /* ContentView.swift in Sources */,
+				94EDE84F26793E8700625325 /* HomeView.swift in Sources */,
 				94EDE84D26793E8700625325 /* Modern_MVVM_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,8 @@
 		94EDE85426793E8A00625325 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EDE85326793E8A00625325 /* Preview Assets.xcassets */; };
 		94EDE85F26793E8A00625325 /* Modern_MVVM_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE85E26793E8A00625325 /* Modern_MVVM_SwiftUITests.swift */; };
 		94EDE86A26793E8A00625325 /* Modern_MVVM_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE86926793E8A00625325 /* Modern_MVVM_SwiftUIUITests.swift */; };
+		94EDE87D267946B000625325 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE87C267946B000625325 /* Collection.swift */; };
+		94EDE87E267946B000625325 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE87C267946B000625325 /* Collection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		94EDE86526793E8A00625325 /* Modern-MVVM-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Modern-MVVM-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EDE86926793E8A00625325 /* Modern_MVVM_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modern_MVVM_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		94EDE86B26793E8A00625325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94EDE87C267946B000625325 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,7 @@
 		94EDE879267945B400625325 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				94EDE87C267946B000625325 /* Collection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EDE87D267946B000625325 /* Collection.swift in Sources */,
 				94EDE84F26793E8700625325 /* HomeView.swift in Sources */,
 				94EDE84D26793E8700625325 /* Modern_MVVM_SwiftUIApp.swift in Sources */,
 			);
@@ -309,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94EDE85F26793E8A00625325 /* Modern_MVVM_SwiftUITests.swift in Sources */,
+				94EDE87E267946B000625325 /* Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

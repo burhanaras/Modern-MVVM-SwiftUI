@@ -8,14 +8,46 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var collections: [Collection]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            List{
+                ForEach(collections) { collection in
+                    
+                    VStack(alignment: .leading) {
+                        Text(collection.title)
+                            .font(.headline)
+                            .padding([.leading, .top], 16)
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(alignment: .top, spacing: 0) {
+                                ForEach(collection.books){ book in
+                                    VStack(alignment: .leading) {
+                                        Image("obama")
+                                            .resizable()
+                                            .frame(width: 155, height: 155)
+                                            .cornerRadius(6)
+                                        
+                                        Text(book.title)
+                                    }
+                                    .padding(.leading, 16)
+                                }
+                                .listRowInsets(EdgeInsets())
+                            }
+                        }
+                    }
+                    .listRowInsets(EdgeInsets())
+                }
+            }
+            .navigationTitle("Audiobooks")
+            .navigationViewStyle(StackNavigationViewStyle())
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(collections: dummyCollections)
     }
 }

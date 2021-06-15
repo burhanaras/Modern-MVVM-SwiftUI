@@ -15,6 +15,14 @@
 		94EDE86A26793E8A00625325 /* Modern_MVVM_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE86926793E8A00625325 /* Modern_MVVM_SwiftUIUITests.swift */; };
 		94EDE87D267946B000625325 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE87C267946B000625325 /* Collection.swift */; };
 		94EDE87E267946B000625325 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE87C267946B000625325 /* Collection.swift */; };
+		94EDE8872679593100625325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EDE8862679593100625325 /* Assets.xcassets */; };
+		94EDE88E2679593100625325 /* Modern-MVVM-SwiftUI-AppleWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94EDE88D2679593100625325 /* Modern-MVVM-SwiftUI-AppleWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94EDE8932679593100625325 /* HomeWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8922679593100625325 /* HomeWatchView.swift */; };
+		94EDE8952679593100625325 /* Modern_MVVM_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8942679593100625325 /* Modern_MVVM_SwiftUIApp.swift */; };
+		94EDE8972679593100625325 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8962679593100625325 /* ComplicationController.swift */; };
+		94EDE8992679593200625325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EDE8982679593200625325 /* Assets.xcassets */; };
+		94EDE89C2679593200625325 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EDE89B2679593200625325 /* Preview Assets.xcassets */; };
+		94EDE8A02679593200625325 /* Modern-MVVM-SwiftUI-AppleWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94EDE8842679592E00625325 /* Modern-MVVM-SwiftUI-AppleWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +40,46 @@
 			remoteGlobalIDString = 94EDE84826793E8700625325;
 			remoteInfo = "Modern-MVVM-SwiftUI";
 		};
+		94EDE88F2679593100625325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94EDE84126793E8700625325 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94EDE88C2679593100625325;
+			remoteInfo = "Modern-MVVM-SwiftUI-AppleWatch Extension";
+		};
+		94EDE89E2679593200625325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94EDE84126793E8700625325 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94EDE8832679592E00625325;
+			remoteInfo = "Modern-MVVM-SwiftUI-AppleWatch";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94EDE8A42679593200625325 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94EDE88E2679593100625325 /* Modern-MVVM-SwiftUI-AppleWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EDE8A82679593200625325 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				94EDE8A02679593200625325 /* Modern-MVVM-SwiftUI-AppleWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		94EDE84926793E8700625325 /* Modern-MVVM-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modern-MVVM-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +95,16 @@
 		94EDE86926793E8A00625325 /* Modern_MVVM_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modern_MVVM_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		94EDE86B26793E8A00625325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94EDE87C267946B000625325 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		94EDE8842679592E00625325 /* Modern-MVVM-SwiftUI-AppleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modern-MVVM-SwiftUI-AppleWatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EDE8862679593100625325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94EDE8882679593100625325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94EDE88D2679593100625325 /* Modern-MVVM-SwiftUI-AppleWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Modern-MVVM-SwiftUI-AppleWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EDE8922679593100625325 /* HomeWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWatchView.swift; sourceTree = "<group>"; };
+		94EDE8942679593100625325 /* Modern_MVVM_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modern_MVVM_SwiftUIApp.swift; sourceTree = "<group>"; };
+		94EDE8962679593100625325 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		94EDE8982679593200625325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94EDE89B2679593200625325 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		94EDE89D2679593200625325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +129,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94EDE88A2679593100625325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +145,8 @@
 				94EDE84B26793E8700625325 /* Modern-MVVM-SwiftUI */,
 				94EDE85D26793E8A00625325 /* Modern-MVVM-SwiftUITests */,
 				94EDE86826793E8A00625325 /* Modern-MVVM-SwiftUIUITests */,
+				94EDE8852679592E00625325 /* Modern-MVVM-SwiftUI-AppleWatch */,
+				94EDE8912679593100625325 /* Modern-MVVM-SwiftUI-AppleWatch Extension */,
 				94EDE84A26793E8700625325 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +157,8 @@
 				94EDE84926793E8700625325 /* Modern-MVVM-SwiftUI.app */,
 				94EDE85A26793E8A00625325 /* Modern-MVVM-SwiftUITests.xctest */,
 				94EDE86526793E8A00625325 /* Modern-MVVM-SwiftUIUITests.xctest */,
+				94EDE8842679592E00625325 /* Modern-MVVM-SwiftUI-AppleWatch.app */,
+				94EDE88D2679593100625325 /* Modern-MVVM-SwiftUI-AppleWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +242,36 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		94EDE8852679592E00625325 /* Modern-MVVM-SwiftUI-AppleWatch */ = {
+			isa = PBXGroup;
+			children = (
+				94EDE8862679593100625325 /* Assets.xcassets */,
+				94EDE8882679593100625325 /* Info.plist */,
+			);
+			path = "Modern-MVVM-SwiftUI-AppleWatch";
+			sourceTree = "<group>";
+		};
+		94EDE8912679593100625325 /* Modern-MVVM-SwiftUI-AppleWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				94EDE8922679593100625325 /* HomeWatchView.swift */,
+				94EDE8942679593100625325 /* Modern_MVVM_SwiftUIApp.swift */,
+				94EDE8962679593100625325 /* ComplicationController.swift */,
+				94EDE8982679593200625325 /* Assets.xcassets */,
+				94EDE89D2679593200625325 /* Info.plist */,
+				94EDE89A2679593200625325 /* Preview Content */,
+			);
+			path = "Modern-MVVM-SwiftUI-AppleWatch Extension";
+			sourceTree = "<group>";
+		};
+		94EDE89A2679593200625325 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				94EDE89B2679593200625325 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,10 +282,12 @@
 				94EDE84526793E8700625325 /* Sources */,
 				94EDE84626793E8700625325 /* Frameworks */,
 				94EDE84726793E8700625325 /* Resources */,
+				94EDE8A82679593200625325 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				94EDE89F2679593200625325 /* PBXTargetDependency */,
 			);
 			name = "Modern-MVVM-SwiftUI";
 			productName = "Modern-MVVM-SwiftUI";
@@ -230,6 +330,40 @@
 			productReference = 94EDE86526793E8A00625325 /* Modern-MVVM-SwiftUIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		94EDE8832679592E00625325 /* Modern-MVVM-SwiftUI-AppleWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94EDE8A52679593200625325 /* Build configuration list for PBXNativeTarget "Modern-MVVM-SwiftUI-AppleWatch" */;
+			buildPhases = (
+				94EDE8822679592E00625325 /* Resources */,
+				94EDE8A42679593200625325 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94EDE8902679593100625325 /* PBXTargetDependency */,
+			);
+			name = "Modern-MVVM-SwiftUI-AppleWatch";
+			productName = "Modern-MVVM-SwiftUI-AppleWatch";
+			productReference = 94EDE8842679592E00625325 /* Modern-MVVM-SwiftUI-AppleWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		94EDE88C2679593100625325 /* Modern-MVVM-SwiftUI-AppleWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94EDE8A12679593200625325 /* Build configuration list for PBXNativeTarget "Modern-MVVM-SwiftUI-AppleWatch Extension" */;
+			buildPhases = (
+				94EDE8892679593100625325 /* Sources */,
+				94EDE88A2679593100625325 /* Frameworks */,
+				94EDE88B2679593100625325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Modern-MVVM-SwiftUI-AppleWatch Extension";
+			productName = "Modern-MVVM-SwiftUI-AppleWatch Extension";
+			productReference = 94EDE88D2679593100625325 /* Modern-MVVM-SwiftUI-AppleWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,6 +384,12 @@
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 94EDE84826793E8700625325;
 					};
+					94EDE8832679592E00625325 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					94EDE88C2679593100625325 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 				};
 			};
 			buildConfigurationList = 94EDE84426793E8700625325 /* Build configuration list for PBXProject "Modern-MVVM-SwiftUI" */;
@@ -268,6 +408,8 @@
 				94EDE84826793E8700625325 /* Modern-MVVM-SwiftUI */,
 				94EDE85926793E8A00625325 /* Modern-MVVM-SwiftUITests */,
 				94EDE86426793E8A00625325 /* Modern-MVVM-SwiftUIUITests */,
+				94EDE8832679592E00625325 /* Modern-MVVM-SwiftUI-AppleWatch */,
+				94EDE88C2679593100625325 /* Modern-MVVM-SwiftUI-AppleWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -293,6 +435,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EDE8822679592E00625325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EDE8872679593100625325 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EDE88B2679593100625325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EDE89C2679593200625325 /* Preview Assets.xcassets in Resources */,
+				94EDE8992679593200625325 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +485,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94EDE8892679593100625325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EDE8952679593100625325 /* Modern_MVVM_SwiftUIApp.swift in Sources */,
+				94EDE8932679593100625325 /* HomeWatchView.swift in Sources */,
+				94EDE8972679593100625325 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -338,6 +507,16 @@
 			isa = PBXTargetDependency;
 			target = 94EDE84826793E8700625325 /* Modern-MVVM-SwiftUI */;
 			targetProxy = 94EDE86626793E8A00625325 /* PBXContainerItemProxy */;
+		};
+		94EDE8902679593100625325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94EDE88C2679593100625325 /* Modern-MVVM-SwiftUI-AppleWatch Extension */;
+			targetProxy = 94EDE88F2679593100625325 /* PBXContainerItemProxy */;
+		};
+		94EDE89F2679593200625325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94EDE8832679592E00625325 /* Modern-MVVM-SwiftUI-AppleWatch */;
+			targetProxy = 94EDE89E2679593200625325 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -586,6 +765,94 @@
 			};
 			name = Release;
 		};
+		94EDE8A22679593200625325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Modern-MVVM-SwiftUI-AppleWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QHU56UTR8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Modern-MVVM-SwiftUI-AppleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.burhan.Modern-MVVM-SwiftUI.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		94EDE8A32679593200625325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Modern-MVVM-SwiftUI-AppleWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QHU56UTR8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Modern-MVVM-SwiftUI-AppleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.burhan.Modern-MVVM-SwiftUI.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		94EDE8A62679593200625325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QHU56UTR8;
+				IBSC_MODULE = Modern_MVVM_SwiftUI_AppleWatch_Extension;
+				INFOPLIST_FILE = "Modern-MVVM-SwiftUI-AppleWatch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.burhan.Modern-MVVM-SwiftUI.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		94EDE8A72679593200625325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QHU56UTR8;
+				IBSC_MODULE = Modern_MVVM_SwiftUI_AppleWatch_Extension;
+				INFOPLIST_FILE = "Modern-MVVM-SwiftUI-AppleWatch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.burhan.Modern-MVVM-SwiftUI.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -621,6 +888,24 @@
 			buildConfigurations = (
 				94EDE87526793E8A00625325 /* Debug */,
 				94EDE87626793E8A00625325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94EDE8A12679593200625325 /* Build configuration list for PBXNativeTarget "Modern-MVVM-SwiftUI-AppleWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94EDE8A22679593200625325 /* Debug */,
+				94EDE8A32679593200625325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94EDE8A52679593200625325 /* Build configuration list for PBXNativeTarget "Modern-MVVM-SwiftUI-AppleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94EDE8A62679593200625325 /* Debug */,
+				94EDE8A72679593200625325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State var collections: [Collection]
+    @ObservedObject var viewModel: HomeViewModel
+    
+    init(viewModel: HomeViewModel) {
+        _viewModel = ObservedObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         NavigationView{
             List{
-                ForEach(collections) { collection in
+                ForEach(viewModel.collections) { collection in
                     BookShelfView(collection: collection)
                 }
             }
@@ -25,7 +29,7 @@ struct HomeView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(collections: dummyCollections)
+        HomeView(viewModel: HomeViewModel())
     }
 }
 

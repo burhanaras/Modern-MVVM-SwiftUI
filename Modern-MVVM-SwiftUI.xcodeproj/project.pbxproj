@@ -24,6 +24,8 @@
 		94EDE89C2679593200625325 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EDE89B2679593200625325 /* Preview Assets.xcassets */; };
 		94EDE8A02679593200625325 /* Modern-MVVM-SwiftUI-AppleWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94EDE8842679592E00625325 /* Modern-MVVM-SwiftUI-AppleWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		94EDE8A9267A063100625325 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE87C267946B000625325 /* Collection.swift */; };
+		94EDE8AB267A527300625325 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8AA267A527200625325 /* HomeViewModel.swift */; };
+		94EDE8AC267A527300625325 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8AA267A527200625325 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,7 @@
 		94EDE8982679593200625325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94EDE89B2679593200625325 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94EDE89D2679593200625325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94EDE8AA267A527200625325 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				94EDE84E26793E8700625325 /* HomeView.swift */,
+				94EDE8AA267A527200625325 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -466,6 +470,7 @@
 				94EDE87D267946B000625325 /* Collection.swift in Sources */,
 				94EDE84F26793E8700625325 /* HomeView.swift in Sources */,
 				94EDE84D26793E8700625325 /* Modern_MVVM_SwiftUIApp.swift in Sources */,
+				94EDE8AB267A527300625325 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94EDE85F26793E8A00625325 /* Modern_MVVM_SwiftUITests.swift in Sources */,
+				94EDE8AC267A527300625325 /* HomeViewModel.swift in Sources */,
 				94EDE87E267946B000625325 /* Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

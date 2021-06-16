@@ -11,7 +11,7 @@ import SwiftUI
 struct Modern_MVVM_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView(collections: dummyCollections)
+            HomeView(viewModel: HomeViewModel())
         }
     }
 }

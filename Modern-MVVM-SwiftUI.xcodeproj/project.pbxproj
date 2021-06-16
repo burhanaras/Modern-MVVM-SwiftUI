@@ -23,6 +23,7 @@
 		94EDE8992679593200625325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EDE8982679593200625325 /* Assets.xcassets */; };
 		94EDE89C2679593200625325 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EDE89B2679593200625325 /* Preview Assets.xcassets */; };
 		94EDE8A02679593200625325 /* Modern-MVVM-SwiftUI-AppleWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94EDE8842679592E00625325 /* Modern-MVVM-SwiftUI-AppleWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94EDE8A9267A063100625325 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE87C267946B000625325 /* Collection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -492,6 +493,7 @@
 				94EDE8952679593100625325 /* Modern_MVVM_SwiftUIApp.swift in Sources */,
 				94EDE8932679593100625325 /* HomeWatchView.swift in Sources */,
 				94EDE8972679593100625325 /* ComplicationController.swift in Sources */,
+				94EDE8A9267A063100625325 /* Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

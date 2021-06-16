@@ -30,6 +30,7 @@ struct HomeView: View {
                                             .cornerRadius(6)
                                         
                                         Text(book.title)
+                                            .padding(.vertical, 8)
                                     }
                                     .padding(.leading, 16)
                                 }

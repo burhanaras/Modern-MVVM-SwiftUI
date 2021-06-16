@@ -8,18 +8,35 @@
 import SwiftUI
 
 struct HomeWatchView: View {
+    @State var collections: [Collection]
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        NavigationView {
+            TabView{
+                ForEach(collections){ collection in
+                    ForEach(collection.books){ book in
+                        VStack(spacing: 4){
+                            Image("obama")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(6)
+                            Text(book.title)
+                        }
+                    }
+                    .navigationTitle(collection.title)
+                }
+            }
+            .tabViewStyle(PageTabViewStyle())
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         return Group{
-            HomeWatchView()
+            HomeWatchView(collections: dummyCollections)
                 .previewDevice("Apple Watch Series 5 - 44mm")
-            HomeWatchView()
+            HomeWatchView(collections: dummyCollections)
                 .previewDevice("Apple Watch Series 5 - 40mm")
         }
     }

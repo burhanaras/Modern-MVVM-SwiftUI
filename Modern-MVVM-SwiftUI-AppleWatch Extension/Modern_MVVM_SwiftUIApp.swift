@@ -12,7 +12,7 @@ struct Modern_MVVM_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                HomeWatchView(viewModel: HomeViewModel())
+                HomeWatchView(viewModel: HomeViewModel(state: .none))
             }
         }
     }

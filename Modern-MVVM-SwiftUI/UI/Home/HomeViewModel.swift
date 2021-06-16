@@ -8,10 +8,12 @@
 import Foundation
 
 class HomeViewModel: ObservableObject{
-    @Published var collections: [Collection]
+    @Published private(set) var collections: [Collection]
+    @Published private(set) var data: Result<[Collection], CommonError>?
     
-    init() {
+    init(state: Result<[Collection], CommonError>?) {
         self.collections = dummyCollections
+        self.data = state
     }
 }
 

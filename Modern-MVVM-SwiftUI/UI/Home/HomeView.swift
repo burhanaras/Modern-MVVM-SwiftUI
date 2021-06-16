@@ -16,20 +16,33 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView{
-            List{
-                ForEach(viewModel.collections) { collection in
-                    BookShelfView(collection: collection)
+            
+            switch viewModel.data{
+            case let .success(collections):
+                List{
+                    ForEach(collections) { collection in
+                        BookShelfView(collection: collection)
+                    }
                 }
+                .navigationTitle("Audiobooks")
+            case let .failure(error):
+               ErrorView(error: error)
+            case .none:
+                ProgressView()
             }
-            .navigationTitle("Audiobooks")
         }
+        .navigationTitle("Audiobooks")
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(viewModel: HomeViewModel())
+        return Group{
+            HomeView(viewModel: HomeViewModel(state: .none))
+            HomeView(viewModel: HomeViewModel(state: .success(dummyCollections)))
+            HomeView(viewModel: HomeViewModel(state: .failure(.networkError)))
+        }
     }
 }
 

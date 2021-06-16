@@ -37,9 +37,9 @@ struct HomeWatchView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         return Group{
-            HomeWatchView(viewModel: HomeViewModel())
+            HomeWatchView(viewModel: HomeViewModel(state: .none))
                 .previewDevice("Apple Watch Series 5 - 44mm")
-            HomeWatchView(viewModel: HomeViewModel())
+            HomeWatchView(viewModel: HomeViewModel(state: .none))
                 .previewDevice("Apple Watch Series 5 - 40mm")
         }
     }

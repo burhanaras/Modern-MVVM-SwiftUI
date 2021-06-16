@@ -19,12 +19,7 @@ struct HomeView: View {
             
             switch viewModel.data{
             case let .success(collections):
-                List{
-                    ForEach(collections) { collection in
-                        BookShelfView(collection: collection)
-                    }
-                }
-                .navigationTitle("Audiobooks")
+               AudioBookListView(collections: collections)
             case let .failure(error):
                ErrorView(error: error)
             case .none:
@@ -43,6 +38,18 @@ struct ContentView_Previews: PreviewProvider {
             HomeView(viewModel: HomeViewModel(state: .success(dummyCollections)))
             HomeView(viewModel: HomeViewModel(state: .failure(.networkError)))
         }
+    }
+}
+
+struct AudioBookListView: View{
+    let collections: [Collection]
+    var body: some View{
+        List{
+            ForEach(collections) { collection in
+                BookShelfView(collection: collection)
+            }
+        }
+        .navigationTitle("Audiobooks")
     }
 }
 

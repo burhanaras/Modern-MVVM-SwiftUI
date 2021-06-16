@@ -20,7 +20,6 @@ struct HomeWatchView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .cornerRadius(6)
-                            Text(book.title)
                         }
                     }
                     .navigationTitle(collection.title)

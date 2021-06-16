@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct HomeWatchView: View {
-    @State var collections: [Collection]
+    @ObservedObject var viewModel: HomeViewModel
+    
+    init(viewModel: HomeViewModel) {
+        _viewModel = ObservedObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         NavigationView {
             TabView{
-                ForEach(collections){ collection in
+                ForEach(viewModel.collections){ collection in
                     ForEach(collection.books){ book in
                         VStack(spacing: 4){
                             Image("obama")
@@ -33,9 +37,9 @@ struct HomeWatchView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         return Group{
-            HomeWatchView(collections: dummyCollections)
+            HomeWatchView(viewModel: HomeViewModel())
                 .previewDevice("Apple Watch Series 5 - 44mm")
-            HomeWatchView(collections: dummyCollections)
+            HomeWatchView(viewModel: HomeViewModel())
                 .previewDevice("Apple Watch Series 5 - 40mm")
         }
     }

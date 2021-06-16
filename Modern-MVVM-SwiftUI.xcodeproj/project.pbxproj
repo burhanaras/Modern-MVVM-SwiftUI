@@ -26,6 +26,7 @@
 		94EDE8A9267A063100625325 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE87C267946B000625325 /* Collection.swift */; };
 		94EDE8AB267A527300625325 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8AA267A527200625325 /* HomeViewModel.swift */; };
 		94EDE8AC267A527300625325 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8AA267A527200625325 /* HomeViewModel.swift */; };
+		94EDE8AD267A547E00625325 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8AA267A527200625325 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -499,6 +500,7 @@
 				94EDE8952679593100625325 /* Modern_MVVM_SwiftUIApp.swift in Sources */,
 				94EDE8932679593100625325 /* HomeWatchView.swift in Sources */,
 				94EDE8972679593100625325 /* ComplicationController.swift in Sources */,
+				94EDE8AD267A547E00625325 /* HomeViewModel.swift in Sources */,
 				94EDE8A9267A063100625325 /* Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

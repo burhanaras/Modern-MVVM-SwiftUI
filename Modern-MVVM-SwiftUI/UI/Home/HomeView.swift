@@ -42,8 +42,8 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("Audiobooks")
-            .navigationViewStyle(StackNavigationViewStyle())
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

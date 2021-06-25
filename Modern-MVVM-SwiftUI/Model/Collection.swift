@@ -7,14 +7,18 @@
 
 import Foundation
 
-struct Collection: Identifiable{
+struct CollectionsResponse: Codable {
+    let collections: [Collection]
+}
+
+struct Collection: Identifiable, Codable {
     let id: String
     let title: String
     let books: [Book]
 }
 
-struct Book: Identifiable{
+struct Book: Identifiable, Codable {
     let id: String
-    let title: String
-    let imageUrl: String
+    let Title: String
+    let Image: String
 }

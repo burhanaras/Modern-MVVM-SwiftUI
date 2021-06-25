@@ -16,30 +16,59 @@ struct HomeWatchView: View {
     
     var body: some View {
         NavigationView {
-            TabView{
-                ForEach(viewModel.collections){ collection in
-                    ForEach(collection.books){ book in
-                        VStack(spacing: 4){
-                            Image("obama")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .cornerRadius(6)
-                        }
-                    }
-                    .navigationTitle(collection.title)
+            
+            switch viewModel.data{
+            case let .success(collections):
+                BookListWatchView(collections: collections)
+            case let .failure(error):
+               ErrorView(error: error)
+            case .none:
+                VStack {
+                    ProgressView().padding(4)
+                    Text("Loading")
                 }
             }
-            .tabViewStyle(PageTabViewStyle())
         }
     }
 }
 
+struct BookListWatchView: View{
+    let collections: [Collection]
+    var body: some View{
+        TabView{
+            ForEach(collections){ collection in
+                ForEach(collection.books){ book in
+                    VStack(spacing: 4){
+                        Image("obama")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .cornerRadius(6)
+                    }
+                }
+                .navigationTitle(collection.title)
+            }
+        }
+        .tabViewStyle(PageTabViewStyle())
+    }
+}
+
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         return Group{
-            HomeWatchView(viewModel: HomeViewModel(state: .none))
+            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .none))
                 .previewDevice("Apple Watch Series 5 - 44mm")
-            HomeWatchView(viewModel: HomeViewModel(state: .none))
+            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .none))
+                .previewDevice("Apple Watch Series 5 - 40mm")
+            
+            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .success(dummyCollections)))
+                .previewDevice("Apple Watch Series 5 - 44mm")
+            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .success(dummyCollections)))
+                .previewDevice("Apple Watch Series 5 - 40mm")
+            
+            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .failure(.networkError)))
+                .previewDevice("Apple Watch Series 5 - 44mm")
+            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .failure(.configurationError)))
                 .previewDevice("Apple Watch Series 5 - 40mm")
         }
     }

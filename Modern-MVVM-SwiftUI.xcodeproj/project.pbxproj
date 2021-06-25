@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94CEAA65267F420400F2AB98 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CEAA64267F420400F2AB98 /* NetworkLayer.swift */; };
+		94CEAA66267F420400F2AB98 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CEAA64267F420400F2AB98 /* NetworkLayer.swift */; };
+		94CEAA67267F420400F2AB98 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CEAA64267F420400F2AB98 /* NetworkLayer.swift */; };
+		94E63A9626867C5E00653B61 /* audiobooks.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E63A9526867C5E00653B61 /* audiobooks.json */; };
 		94EDE84D26793E8700625325 /* Modern_MVVM_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE84C26793E8700625325 /* Modern_MVVM_SwiftUIApp.swift */; };
 		94EDE84F26793E8700625325 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE84E26793E8700625325 /* HomeView.swift */; };
 		94EDE85126793E8A00625325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EDE85026793E8A00625325 /* Assets.xcassets */; };
@@ -32,6 +36,7 @@
 		94EDE8B1267A5F0200625325 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8AE267A5F0200625325 /* CommonError.swift */; };
 		94EDE8B3267A637D00625325 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8B2267A637D00625325 /* ErrorView.swift */; };
 		94EDE8B4267A637D00625325 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8B2267A637D00625325 /* ErrorView.swift */; };
+		94EDE8B5267A6B7600625325 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE8B2267A637D00625325 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +96,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		94CEAA64267F420400F2AB98 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		94E63A9526867C5E00653B61 /* audiobooks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = audiobooks.json; sourceTree = "<group>"; };
 		94EDE84926793E8700625325 /* Modern-MVVM-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modern-MVVM-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EDE84C26793E8700625325 /* Modern_MVVM_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modern_MVVM_SwiftUIApp.swift; sourceTree = "<group>"; };
 		94EDE84E26793E8700625325 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -151,6 +158,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94E63A9426867C3A00653B61 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				94E63A9526867C5E00653B61 /* audiobooks.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 		94EDE84026793E8700625325 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +198,7 @@
 				94EDE879267945B400625325 /* Model */,
 				94EDE8782679459800625325 /* Network */,
 				94EDE87A267945CE00625325 /* Views */,
+				94E63A9426867C3A00653B61 /* Files */,
 				94EDE85026793E8A00625325 /* Assets.xcassets */,
 				94EDE85526793E8A00625325 /* Info.plist */,
 				94EDE85226793E8A00625325 /* Preview Content */,
@@ -227,6 +243,7 @@
 		94EDE8782679459800625325 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				94CEAA64267F420400F2AB98 /* NetworkLayer.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -434,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E63A9626867C5E00653B61 /* audiobooks.json in Resources */,
 				94EDE85426793E8A00625325 /* Preview Assets.xcassets in Resources */,
 				94EDE85126793E8A00625325 /* Assets.xcassets in Resources */,
 			);
@@ -477,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CEAA65267F420400F2AB98 /* NetworkLayer.swift in Sources */,
 				94EDE8AF267A5F0200625325 /* CommonError.swift in Sources */,
 				94EDE8B3267A637D00625325 /* ErrorView.swift in Sources */,
 				94EDE87D267946B000625325 /* Collection.swift in Sources */,
@@ -490,6 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CEAA66267F420400F2AB98 /* NetworkLayer.swift in Sources */,
 				94EDE8B4267A637D00625325 /* ErrorView.swift in Sources */,
 				94EDE85F26793E8A00625325 /* Modern_MVVM_SwiftUITests.swift in Sources */,
 				94EDE8AC267A527300625325 /* HomeViewModel.swift in Sources */,
@@ -514,6 +534,8 @@
 				94EDE8B1267A5F0200625325 /* CommonError.swift in Sources */,
 				94EDE8932679593100625325 /* HomeWatchView.swift in Sources */,
 				94EDE8972679593100625325 /* ComplicationController.swift in Sources */,
+				94CEAA67267F420400F2AB98 /* NetworkLayer.swift in Sources */,
+				94EDE8B5267A6B7600625325 /* ErrorView.swift in Sources */,
 				94EDE8AD267A547E00625325 /* HomeViewModel.swift in Sources */,
 				94EDE8A9267A063100625325 /* Collection.swift in Sources */,
 			);

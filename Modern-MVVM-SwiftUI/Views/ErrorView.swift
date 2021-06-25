@@ -13,12 +13,12 @@ struct ErrorView: View {
     var body: some View {
         VStack{
             switch error{
-            case .networkError:
+            case .configurationError:
                 Image(systemName: "xmark.octagon")
                     .font(.title)
                     .padding()
                 Text("Something went wrong. Please try again later.")
-            case .configurationError:
+            case .networkError:
                 Image(systemName: "wifi.exclamationmark")
                     .font(.title)
                     .padding()

@@ -1,0 +1,77 @@
+{
+    "Audiobooks": [{
+            "Title": "A Promised Land",
+            "By": "Barack Obama",
+            "NarratedBy": "Barack Obama",
+            "Length": "29 hrs and 10 mins",
+            "Categories": "Biographies & Memoirs; Politics & Activism",
+            "Stars": "4.9",
+            "Sample": "https://samples.audible.com/bk/rand/008568/bk_rand_008568_sample.mp3",
+            "Image": "https://m.media-amazon.com/images/I/41bffUhJ4xL._SL500_.jpg"
+        },
+        {
+            "Title": "Becoming",
+            "By": "Michelle Obama",
+            "NarratedBy": "Michelle Obama",
+            "Length": "19 hrs and 3 mins",
+            "Categories": "Biographies & Memoirs, Politics & Activism",
+            "Stars": "4.9",
+            "Sample": "https://samples.audible.com/bk/rand/006061/bk_rand_006061_sample.mp3",
+            "Image": "https://m.media-amazon.com/images/I/51FmoRnhTuL._SL500_.jpg"
+        },
+        {
+            "Title": "Born a Crime",
+            "Subtitle": "Stories from a South African Childhood",
+            "By": "Trevor Noah",
+            "NarratedBy": "Trevor Noah",
+            "Length": "8 hrs and 44 mins",
+            "Categories": "Arts & Entertainment, Entertainment & Performing Arts",
+            "Stars": "4.9",
+            "Sample": "https://samples.audible.com/bk/adbl/027964/bk_adbl_027964_sample.mp3",
+            "Image": "https://m.media-amazon.com/images/I/61kaa1WAklL._SL500_.jpg"
+        },
+        {
+            "Title": "Harry Potter and the Order of the Phoenix, Book 5",
+            "By": "J.K. Rowling",
+            "NarratedBy": "Jim Dale",
+            "Series": "Harry Potter, Book 5, Wizarding World, Book 5",
+            "Length": "26 hrs and 29 mins",
+            "Categories": "Children's Audiobooks, Literature & Fiction",
+            "Stars": "4.9",
+            "Sample": "https://samples.audible.com/bk/potr/000005/bk_potr_000005_sample.mp3",
+            "Image": "https://m.media-amazon.com/images/I/51ok3DFBrRL._SL500_.jpg"
+        },
+        {
+            "Title": "Greenlights",
+            "By": "Matthew McConaughey",
+            "NarratedBy": "Matthew McConaughey",
+            "Length": "6 hrs and 42 mins",
+            "Categories": "Biographies & Memoirs, Entertainment & Celebrities",
+            "Stars": "4.9",
+            "Sample": "https://samples.audible.com/bk/rand/008072/bk_rand_008072_sample.mp3",
+            "Image": "https://m.media-amazon.com/images/I/51DZeZw7K0L._SL500_.jpg"
+        },
+        {
+            "Title": "Project Hail Mary",
+            "By": "Andy Weir",
+            "NarratedBy": "Ray Porter",
+            "Length": "16 hrs and 10 mins",
+            "Categories": "Science Fiction & Fantasy, Science Fiction",
+            "Stars": "4.9",
+            "Sample": "https://samples.audible.com/bk/adbl/051843/bk_adbl_051843_sample.mp3",
+            "Image": "https://m.media-amazon.com/images/I/51b6fvQr1-L._SL500_.jpg"
+        },
+        {
+            "Title": "Breakaway",
+            "Subtitle": "Expeditionary Force, Book 12",
+            "By": "Craig Alanson",
+            "NarratedBy": "R.C. Bray",
+            "Series": "Expeditionary Force, Book 12",
+            "Length": "19 hrs and 22 mins",
+            "Categories": "Science Fiction & Fantasy, Science Fiction",
+            "Stars": "4.8",
+            "Sample": "https://samples.audible.com/bk/podm/002491/bk_podm_002491_sample.mp3",
+            "Image": "https://m.media-amazon.com/images/I/518Ut5A+N0S._SL500_.jpg"
+        }
+    ]
+}

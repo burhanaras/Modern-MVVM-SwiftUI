@@ -11,3 +11,8 @@ enum CommonError: Error{
     case networkError
     case configurationError
 }
+
+enum RequestError: Error{
+    case malformedUrl
+    case networkError
+}

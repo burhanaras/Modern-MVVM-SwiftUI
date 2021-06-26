@@ -15,7 +15,7 @@ protocol INetworkLayer{
 
 class NetworkLayer: INetworkLayer{
     
-    private static let baseUrl = "http://burhanaras.net"
+    private static let baseUrl = "https://github.com/burhanaras/Modern-MVVM-SwiftUI/blob/main/Modern-MVVM-SwiftUI/Files"
     private let decoder = JSONDecoder()
     
     var audiobooks: AnyPublisher<[Collection],RequestError> {
@@ -47,6 +47,14 @@ class DummyNetworkLayer: INetworkLayer{
     var audiobooks: AnyPublisher<[Collection], RequestError> {
         return Result<[Collection], RequestError>
             .Publisher(.success(dummyCollections))
+            .eraseToAnyPublisher()
+    }
+}
+
+class DummyFailingNetworkLayer: INetworkLayer{
+    var audiobooks: AnyPublisher<[Collection], RequestError>{
+        return Result<[Collection], RequestError>
+            .Publisher(.failure(.networkError))
             .eraseToAnyPublisher()
     }
 }

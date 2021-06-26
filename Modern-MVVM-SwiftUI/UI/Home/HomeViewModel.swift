@@ -9,28 +9,13 @@ import Foundation
 import Combine
 
 class HomeViewModel: ObservableObject{
-    @Published private(set) var collections: [Collection]
-    @Published private(set) var data: Result<[Collection], CommonError>?
+    @Published private(set) var data: Result<[Collection], CommonError>? = .none
     
     private var networkLayer: INetworkLayer?
     private var cancellables: Set<AnyCancellable> = []
     
-    init(networkLayer: INetworkLayer, state: Result<[Collection], CommonError>?) {
+    init(networkLayer: INetworkLayer) {
         self.networkLayer = networkLayer
-        self.collections = dummyCollections
-        self.data = state
-        subscribe()
-        
-//        // For testing purposes
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 2){
-//            self.data = .success(dummyCollections)
-//        }
-    }
-    
-    init(networkLayer: NetworkLayer?) {
-        self.networkLayer = networkLayer
-        self.collections = dummyCollections
-        
         subscribe()
     }
     

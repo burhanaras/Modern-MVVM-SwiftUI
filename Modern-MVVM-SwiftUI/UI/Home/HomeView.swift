@@ -37,9 +37,12 @@ struct HomeView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         return Group{
-            HomeView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(), state: .none))
-            HomeView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .success(dummyCollections)))
-            HomeView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .failure(.networkError)))
+            HomeView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer()))
+            HomeView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer()))
+                .colorScheme(.dark)
+            HomeView(viewModel: HomeViewModel(networkLayer: DummyFailingNetworkLayer()))
+            HomeView(viewModel: HomeViewModel(networkLayer: DummyFailingNetworkLayer()))
+                .colorScheme(.dark)
         }
     }
 }

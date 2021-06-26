@@ -56,19 +56,14 @@ struct BookListWatchView: View{
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         return Group{
-            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .none))
+            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer()))
                 .previewDevice("Apple Watch Series 5 - 44mm")
-            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .none))
+            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer()))
                 .previewDevice("Apple Watch Series 5 - 40mm")
             
-            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .success(dummyCollections)))
+            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyFailingNetworkLayer()))
                 .previewDevice("Apple Watch Series 5 - 44mm")
-            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .success(dummyCollections)))
-                .previewDevice("Apple Watch Series 5 - 40mm")
-            
-            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .failure(.networkError)))
-                .previewDevice("Apple Watch Series 5 - 44mm")
-            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyNetworkLayer(),state: .failure(.configurationError)))
+            HomeWatchView(viewModel: HomeViewModel(networkLayer: DummyFailingNetworkLayer()))
                 .previewDevice("Apple Watch Series 5 - 40mm")
         }
     }
